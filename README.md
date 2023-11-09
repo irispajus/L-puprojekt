@@ -6,4 +6,6 @@ Koodi kirjutamise põhimõtted:
 - muutujad, funktsioonid ja muu selline kirjutatakse eesti keeles
 - koodi kirjutamiseks kasutatakse Python süntaksit
   
-
+Koodi kasutamise juhend:
+- enne koodi kasutamist tuleb alla laadida Pythoni library openpyxl, et kasutada xlsx faili lugemise funktsionaalsust
+- enne koodi kasutamist tuleb alla laadida Exceli fail käesolevast repositoryst
