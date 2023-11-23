@@ -7,9 +7,10 @@ Koodi kirjutamise põhimõtted:
 - koodi kirjutamiseks kasutatakse Python süntaksit
 - koodi kommenteeritakse eesti keeles ja enne igat lõiku koodis lisatakse lühike kirjeldus mis järgnevas osas toimub
   
-Koodi kasutamise juhend:
-- enne koodi kasutamist tuleb alla laadida Pythoni library openpyxl, et kasutada xlsx faili lugemise funktsionaalsust
-- enne koodi kasutamist tuleb alla laadida Exceli fail käesolevast repositoryst
+Enne koodi kasutamist lae alla:
+- Pythoni library openpyxl, et kasutada xlsx faili lugemise funktsionaalsust (pip install openpyxl)
+- Pythoni library xlsx writer, et kirjutada uus xlsx fail (pip install XlsxWriter)
+- Exceli fail käesolevast repositoryst
 
 Koodi töötamise kirjeldus (Content Based Filtering)
 1. Kasutaja logib sisse oma kontosse esimesest aknast
