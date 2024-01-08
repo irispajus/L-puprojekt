@@ -10,7 +10,7 @@ Koodi kirjutamise põhimõtted:
 Enne koodi kasutamist lae alla:
 - Pythoni library openpyxl ja pandas, et kasutada xlsx faili lugemise funktsionaalsust (pip install openpyxl)
 - Pythoni library xlsx writer, et kirjutada uus xlsx fail (pip install XlsxWriter)
-- Exceli fail nimega andmebaas käesolevast repositoryst
+- Exceli fail nimega 'andmebaas.xlsx' käesolevast repositoryst
 
 Koodi töötamise kirjeldus (Content Based Filtering)
 1. Kasutaja logib sisse oma kontosse esimesest aknast
@@ -19,4 +19,4 @@ Koodi töötamise kirjeldus (Content Based Filtering)
 4. Algoritmi tööpõhimõttel soovitatakse esimesena sama artisti järgmisi lugusid, seejärel samast žanrist ja viimasena samal aastal välja antud lugusid. 
 5. igale loole failis lisatakse kaalupunktid
 6. kood sorteerib lood vastavalt kaalupunktidele
-7. kirjutab uuele lehele excelis
+7. kirjutab uude faili nimega andmebaas_sorteeritud
