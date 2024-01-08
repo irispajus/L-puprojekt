@@ -8,9 +8,9 @@ Koodi kirjutamise põhimõtted:
 - koodi kommenteeritakse eesti keeles ja enne igat lõiku koodis lisatakse lühike kirjeldus mis järgnevas osas toimub
   
 Enne koodi kasutamist lae alla:
-- Pythoni library openpyxl, et kasutada xlsx faili lugemise funktsionaalsust (pip install openpyxl)
+- Pythoni library openpyxl ja pandas, et kasutada xlsx faili lugemise funktsionaalsust (pip install openpyxl)
 - Pythoni library xlsx writer, et kirjutada uus xlsx fail (pip install XlsxWriter)
-- Exceli fail käesolevast repositoryst
+- Exceli fail nimega andmebaas käesolevast repositoryst
 
 Koodi töötamise kirjeldus (Content Based Filtering)
 1. Kasutaja logib sisse oma kontosse esimesest aknast
