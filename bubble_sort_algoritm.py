@@ -16,5 +16,5 @@ for i in range(n):
 
 df.to_excel('C:/Users/irispajus/Desktop/PY/andmebaas_sorteeritud.xlsx', index=False)
 
-# happy learning at https://pandas.pydata.org/docs/reference/frame.html
+# happy learning at https://pandas.pydata.org/docs/reference/frame.html :)))
 
