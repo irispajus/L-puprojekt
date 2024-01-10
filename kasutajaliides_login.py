@@ -4,7 +4,8 @@ import tkinter as tk
 from tkinter import messagebox
 import pandas as pd
 from kasutajaliides_welcome import WelcomeWindow  # Importib WelcomeWindow klassi teisest failist
-
+import os
+import random
 
 class LoginWindow:
     # Konstruktor (__init__) initsialiseerib akna ja määrab sellele pealkirja
@@ -97,15 +98,21 @@ class LoginWindow:
 
     # Meetod, mis kutsutakse esile kui kontrolli_sisselogimist funktsioonis saadakse väärtus True
     def edukas_sisselogimine(self):
-    
-        # Loob uue akna
-        uus_aken = tk.Tk()
-    
-        # Loob WelcomeWindow'i objekti, edastades kasutajanime ja uue akna
-        WelcomeWindow(uus_aken, self.kasutajanimi_entry.get())
 
-        # Peamine aken suletakse
-        self.master.destroy()
+        
+        kasutajanimi = self.kasutajanimi_entry.get()
+
+        # Generate a unique user identifier based on user input (you can modify this as needed)
+        user_identifier = f'{kasutajanimi}'
+
+        # Specify the path for the user's database
+        user_db_path = os.path.join('C:/Users/eveli/OneDrive - Tallinna Tehnikaülikool/Algoritmid23/Projekt/UserDatabases/', f'{user_identifier}_andmebaas.xlsx')
+
+        # Pass the user identifier and database path to the WelcomeWindow constructor
+        uus_aken = tk.Tk()
+        WelcomeWindow(uus_aken, user_identifier,user_db_path)
+        
+        
         
     # Meetod, mis salvestab kasutaja andmed Exceli faili
     def salvesta_excelisse(self, kasutajanimi, parool):
